@@ -1,100 +1,174 @@
-
+:root {
+  --primery-color: #757575;
+  --secondary-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+}
 
 /* header */
 
-
 body {
-    background-color:#ffffff;
-    color: #757575;
-    font-family: roboto;
+  background-color: #ffffff;
+  color: var(--primery-color);
+  font-family: roboto, sans-serif;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-
-.logo:hover,
-.logo:focus{
-    color: #762525;
+span {
+  color: var(--secondary-color);
 }
-.type:hover,
-.type:focus {
-    color: #762525;
+span:hover,
+span:focus {
+  color: var(--accent-color);
 }
-
 
 .logo {
-    color: #000000;
-    font-family: raleway;
-    text-decoration: none;
+  color: var(--accent-color);
+  font-family: raleway, sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
-.type {
-    color: #2196F3;
+
+/* site-nav list */
+
+.site-nav .link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
-
-
- /* site-nav list */
-
- .site-nav.link {
-    color: #000000;
-    text-decoration: none;
- }
- .site-nav.link :hover,
- .site-nav.link :focus {
-    color: #2196F3;
-    
- }
+.site-nav :hover,
+.site-nav :focus {
+  color: var(--accent-color);
+}
 
 /* auth-nav list */
 
-.auth-nav link {
-    color: #000000;
-    text-decoration: none;
+.auth-nav .link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .auth-nav :hover,
 .auth-nav :focus {
-    color: #2196F3;
+  color: var(--accent-color);
 }
 /* section-main */
 
-
-.section-main{
-    background-color: #2F303A;
+.section-main {
+  background-color: #2f303a;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.white{
-    color: #ffffff;
+.white {
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
 }
 
-.button{
-    background-color: #2196F3;
-    color: #ffffff;
-    
+.button {
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: 1px solid #000000;
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 /* section-home */
-.title{
-color:#212121;
+.title {
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.text{
-color: #757575;
+.text {
+  color: var(--primery-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
 /* section-info */
 
-
-.bold{
-    color: #212121;
+.bold {
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
 }
 
 /* footer */
-.footer{
-    background-color: #212121;
+.footer {
+  background-color: var(--secondary-color);
 }
-.footer .logo{
-    color:#ffffff ;
+.footer span {
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
-.footer .type{
-color: #2196F3;
+.footer .type {
+  color: var(--accent-color);
 }
-.footer address{
-   color: rgba(255, 255, 255, 0.6);
+.address  {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+}
+.address-link-wh{
+    color: var(--white-color);
+}
+
+.buttons {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.buttons button:hover,
+.buttons button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.links {
+  color: var(--primery-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.6;
+}
+.boldtext {
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
 }
