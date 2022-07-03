@@ -49,12 +49,17 @@ span:focus {
 .site-nav :hover,
 .site-nav :focus {
   color: var(--accent-color);
+  
 }
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
 
 /* auth-nav list */
 
 .auth-nav .link {
-  color: var(--secondary-color);
+  color: var(--primery-color);
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -79,6 +84,7 @@ span:focus {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .button {
@@ -92,16 +98,21 @@ span:focus {
   border: 1px solid #000000;
   background-color: var(--accent-color);
   color: var(--white-color);
+  
+}
+.button:hover,
+.button:focus{
+  background-color: #188CE8;
 }
 /* section-home */
 .title {
   color: var(--secondary-color);
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  
+  
 }
 
 .text {
@@ -110,15 +121,21 @@ span:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+
+}
+.profess {
+    color: var(--primery-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
 }
 /* section-info */
 
 .bold {
-  color: var(--secondary-color);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  
+  font-size: 0;
+ 
 }
 
 /* footer */
@@ -135,7 +152,7 @@ span:focus {
 .footer .type {
   color: var(--accent-color);
 }
-.address  {
+.address-link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: 400;
@@ -146,14 +163,21 @@ span:focus {
     color: var(--white-color);
 }
 
-.buttons {
+.button-second {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  background: #F5F4FA;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.buttons button:hover,
-.buttons button:focus {
+.button-second:hover,
+.button-second:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.button-second.current{
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -171,4 +195,14 @@ span:focus {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+}
+.txt-title {
+    color: var(--primery-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+}
+.content {
+  font-size: 0;
 }
