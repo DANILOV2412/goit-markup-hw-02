@@ -109,10 +109,18 @@ span:focus {
   color: var(--secondary-color);
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   
+}
+.title-name{
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .text {
@@ -133,10 +141,17 @@ span:focus {
 /* section-info */
 
 .bold {
-  
-  font-size: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
  
-}
 
 /* footer */
 .footer {
@@ -158,6 +173,7 @@ span:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
+  text-decoration: none;
 }
 .address-link-wh{
     color: var(--white-color);
@@ -204,5 +220,13 @@ span:focus {
     line-height: 1.9;
 }
 .content {
-  font-size: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
